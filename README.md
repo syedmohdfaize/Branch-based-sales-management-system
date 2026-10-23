@@ -42,9 +42,9 @@ The application offers an intuitive dashboard that allows users to:
 
 ## 🎯 Key Design Decisions
 
-## Generated Column (pending_amt) pending_amt is defined as gross_sales - received_amt using MySQL's GENERATED ALWAYS AS ... STORED. This means it recalculates automatically whenever received_amt changes — it's never set manually.
+Generated Column (pending_amt) pending_amt is defined as gross_sales - received_amt using MySQL's GENERATED ALWAYS AS ... STORED. This means it recalculates automatically whenever received_amt changes — it's never set manually.
 
-## Trigger (trg_update_received_amount) Fires AFTER INSERT on payments. It sums the new payment into received_amt on the matching customer_sales row, which in turn causes pending_amt to recalculate automatically.
+Trigger (trg_update_received_amount) Fires AFTER INSERT on payments. It sums the new payment into received_amt on the matching customer_sales row, which in turn causes pending_amt to recalculate automatically.
 
 ## Role-Based Access Control
 
@@ -53,18 +53,24 @@ Admin — restricted to their own branch_id, enforced both in the UI and in ever
 
 ## 🧠 Automated Business Logic
 
+The system leverages MySQL generated columns and database triggers to automate payment calculations and status management.
+
 ### Generated Column
-pending_amount =
-gross_sales - recieved_amount
+
+'''sql
+pending_amount = gross_sales - recieved_amount
+'''
+
 ### Trigger Automation
-### After Payment Insert
-- Updates received amount
-- Recalculates pending amount
-- Updates status automatically
-### After Payment Delete
-- Recalculates received amount
-- Recalculates pending amount
-- Updates status automatically
+| Trigger | Automated Actions |
+|----------|------------------|
+| **After Payment Insert** | Update received amount, recalculate pending amount, update payment status |
+| **After Payment Delete** | Recalculate received amount, recalculate pending amount, update payment status |
+
+### Benefits
+- Eliminates manual calculations
+- Maintains data consistency
+- Automatically updates payment status
 
 ## ⚙️ How to Run This Project
 
