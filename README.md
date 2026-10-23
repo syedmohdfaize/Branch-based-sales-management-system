@@ -3,7 +3,7 @@
 A comprehensive Sales Management Dashboard built using Python, Streamlit, MySQL, and Pandas to manage branch-wise sales operations, payment tracking, customer records, and business analytics through an interactive web interface.
 -----------------------------------------------------------------------------------------------------------------------------
 
-### Features
+## Features
 - Secure login with session-based authentication
 - Role-based dashboard (Super Admin / Admin)
 - Add new sales entries (branch-restricted for Admin)
@@ -12,7 +12,7 @@ A comprehensive Sales Management Dashboard built using Python, Streamlit, MySQL,
 - 15 executable predefined SQL queries, organized by category
 -----------------------------------------------------------------------------------------------------------------------------
 
-### Tech Stack
+## Tech Stack
 - Database: MySQL
 - Backend: Python (mysql-connector-python)
 - Frontend: Streamlit
