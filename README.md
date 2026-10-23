@@ -65,7 +65,10 @@ Super Admins can access all branches, while Admins are restricted to their assig
    cd sales-management-system
   ```
 - #### Install dependencies
+  
+  ```bash
    pip install streamlit mysql-connector-python pandas
+  ```
 - #### Set up the database
 - Run the schema/table creation statements from query.sql in MySQL Workbench
 - Run the trigger creation statement from query.sql
