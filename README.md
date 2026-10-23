@@ -44,7 +44,7 @@ The application offers an intuitive dashboard that allows users to:
 
 #### Generated Column (pending_amt):
 
-This means it recalculates automatically whenever received_amt changes — it's never set manually.
+This means it recalculates automatically whenever received_amt changes — it's never set manually.<br>
 ' pending_amount = gross_sales - recieved_amount '
 
 #### Trigger:
