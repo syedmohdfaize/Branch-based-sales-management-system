@@ -84,7 +84,7 @@ Super Admins can access all branches, while Admins are restricted to their assig
    database = "branch_based_sales_management_system"
 ```
 
-#### Run the app
+- #### Run the app
 
 ```bash
    streamlit run app.py
