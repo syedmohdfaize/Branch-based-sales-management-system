@@ -26,10 +26,10 @@ The application offers an intuitive dashboard that allows users to:
 
 ## 🛠️ Tech Stack
 
-- Database: MySQL
-- Backend: Python (mysql-connector-python)
-- Frontend: Streamlit
-- Data handling: pandas
+- **Database:** MySQL
+- **Backend:** Python (mysql-connector-python)
+- **Frontend:** Streamlit
+- **Data handling:** pandas
 
 ## 🗄️ Database Schema
 
@@ -45,14 +45,15 @@ The application offers an intuitive dashboard that allows users to:
 #### Generated Column (pending_amt):
 
 This means it recalculates automatically whenever received_amt changes — it's never set manually.
+
 '''sql
 pending_amount = gross_sales - recieved_amount
 '''
 
 #### Trigger:
 
-**✅ After Payment Insert:** Update received amount, recalculate pending amount, update payment status
-**✅ After Payment Delete:** Recalculate received amount, recalculate pending amount, update payment status
+- **✅ After Payment Insert:** Update received amount, recalculate pending amount, update payment status
+- **✅ After Payment Delete:** Recalculate received amount, recalculate pending amount, update payment status
 
 #### Role-Based Access Control:
 
