@@ -1,7 +1,6 @@
 # Branch-based-sales-management-system
 
 <p>A comprehensive Sales Management Dashboard built using Python, Streamlit, MySQL, and Pandas to manage branch-wise sales operations, payment tracking, customer records, and business analytics through an interactive web interface.</p>
------------------------------------------------------------------------------------------------------------------------------
 
 ## Features
 
@@ -11,7 +10,6 @@
 - Add payments with automatic trigger-based balance updates
 - Reports dashboard: KPIs, branch comparison, pending payments, sales status, payment method breakdown, monthly trends
 - 15 executable predefined SQL queries, organized by category
------------------------------------------------------------------------------------------------------------------------------
 
 ## Tech Stack
 
