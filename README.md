@@ -59,8 +59,11 @@ Super Admins can access all branches, while Admins are restricted to their assig
 ## ⚙️ How to Run This Project
 
 - #### Clone the repository
-   git clone https://github.com/ThereseRansey/sales-management-system.git
+  
+  ```bash
+   git clone https://github.com/syedmohdfaize/Branch-based-sales-management-system.git
    cd sales-management-system
+  ```
 - #### Install dependencies
    pip install streamlit mysql-connector-python pandas
 - #### Set up the database
@@ -79,7 +82,9 @@ Super Admins can access all branches, while Admins are restricted to their assig
 
 #### Run the app
 
-   ```streamlit run app.py```
+```bash
+   streamlit run app.py
+```
 
 ## Author
 [Syed Mohamed Faize]
