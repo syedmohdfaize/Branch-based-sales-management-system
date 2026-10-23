@@ -68,12 +68,13 @@ Super Admins can access all branches, while Admins are restricted to their assig
 - Run the trigger creation statement from query.sql
 - Insert your sample data
 ### Configure your database credentials Create a .streamlit/secrets.toml file in the project folder (not included in this repo for security):
-
+'''bash
    [mysql]
    host = "localhost"
    user = "root"
    password = "your_password"
    database = "branch_based_sales_management_system"
+'''
 ### Run the app
    streamlit run app.py
 
