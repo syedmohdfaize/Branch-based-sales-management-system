@@ -51,12 +51,11 @@ pending_amount = gross_sales - recieved_amount
 
 #### Trigger:
 
-| Trigger | Automated Actions |
-|----------|------------------|
-| **After Payment Insert** | Update received amount, recalculate pending amount, update payment status |
-| **After Payment Delete** | Recalculate received amount, recalculate pending amount, update payment status |
+**✅ After Payment Insert:** Update received amount, recalculate pending amount, update payment status
+**✅ After Payment Delete:** Recalculate received amount, recalculate pending amount, update payment status
 
 #### Role-Based Access Control:
+
 Super Admins can access all branches, while Admins are restricted to their assigned branch. Access restrictions are enforced in both the Streamlit UI and SQL queries.
 
 ## ⚙️ How to Run This Project
