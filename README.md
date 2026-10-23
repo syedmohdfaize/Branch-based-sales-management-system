@@ -42,17 +42,17 @@ The application offers an intuitive dashboard that allows users to:
 
 ## 🎯 Key Design Decisions
 
-#### Generated Column (pending_amt):
+#### ✅ Generated Column (pending_amt):
 
 This means it recalculates automatically whenever received_amt changes — it's never set manually.<br>
 ' pending_amount = gross_sales - recieved_amount '
 
-#### Trigger:
+#### ✅ Trigger:
 
-- **✅ After Payment Insert:** Update received amount, recalculate pending amount, update payment status
-- **✅ After Payment Delete:** Recalculate received amount, recalculate pending amount, update payment status
+- ** After Payment Insert:** Update received amount, recalculate pending amount, update payment status
+- ** After Payment Delete:** Recalculate received amount, recalculate pending amount, update payment status
 
-#### Role-Based Access Control:
+#### ✅ Role-Based Access Control:
 
 Super Admins can access all branches, while Admins are restricted to their assigned branch. Access restrictions are enforced in both the Streamlit UI and SQL queries.
 
