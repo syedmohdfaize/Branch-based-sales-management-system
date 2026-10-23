@@ -14,7 +14,7 @@ def get_connection():
     return mysql.connector.connect(  
     host = 'localhost',
     user = 'root',
-    password = 'root',
+    password = 'your_password',
     database = 'branch_based_sales_management_system')
 
 connection = get_connection()
