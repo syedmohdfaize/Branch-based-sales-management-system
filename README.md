@@ -68,7 +68,8 @@ Super Admins can access all branches, while Admins are restricted to their assig
 - Run the trigger creation statement from query.sql
 - Insert your sample data
 ### Configure your database credentials Create a .streamlit/secrets.toml file in the project folder (not included in this repo for security):
-'''bash
+
+'''text
    [mysql]
    host = "localhost"
    user = "root"
