@@ -4,6 +4,7 @@
 -----------------------------------------------------------------------------------------------------------------------------
 
 ## Features
+
 - Secure login with session-based authentication
 - Role-based dashboard (Super Admin / Admin)
 - Add new sales entries (branch-restricted for Admin)
@@ -13,6 +14,7 @@
 -----------------------------------------------------------------------------------------------------------------------------
 
 ## Tech Stack
+
 - Database: MySQL
 - Backend: Python (mysql-connector-python)
 - Frontend: Streamlit
@@ -27,12 +29,6 @@
 | **Customer_sales** | sale_id, branch_id, date, name, mobile_number, product_name, gross_sales, recieved_amount, pending_amount, status |
 | **Users** | user_id, username, password, branch_id, role, email |
 | **Payment_Splits** | payment_id, sale_id, payment_date, amount_paid, payment_method |
-
-
-## Customer Sales
-
-## Users
-l
 
 -----------------------------------------------------------------------------------------------------------------------------
 
