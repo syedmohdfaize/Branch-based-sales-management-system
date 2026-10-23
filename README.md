@@ -90,8 +90,8 @@ Super Admins can access all branches, while Admins are restricted to their assig
    streamlit run app.py
 ```
 
-## Author
-[Syed Mohamed Faize]
+## 👨‍💻 Author
+Syed Mohamed Faize
 
 
 
