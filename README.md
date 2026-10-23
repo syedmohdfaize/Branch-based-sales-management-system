@@ -42,14 +42,14 @@ The application offers an intuitive dashboard that allows users to:
 
 ## 🎯 Key Design Decisions
 
-Generated Column (pending_amt) pending_amt is defined as gross_sales - received_amt using MySQL's GENERATED ALWAYS AS ... STORED. This means it recalculates automatically whenever received_amt changes — it's never set manually.
+**Generated Column (pending_amt):** 
+pending_amt = gross_sales - received_amt using MySQL's GENERATED ALWAYS AS STORED. This means it recalculates automatically whenever received_amt changes — it's never set manually.
 
-Trigger (trg_update_received_amount) Fires AFTER INSERT on payments. It sums the new payment into received_amt on the matching customer_sales row, which in turn causes pending_amt to recalculate automatically.
+**Trigger:** 
+MySQL triggers automatically update the received amount, pending amount, and payment status whenever a payment record is added.
 
-## Role-Based Access Control
-
-Super Admin — can view and add sales for all branches
-Admin — restricted to their own branch_id, enforced both in the UI and in every SQL query
+**Role-Based Access Control:**
+Super Admins can access all branches, while Admins are restricted to their assigned branch. Access restrictions are enforced in both the Streamlit UI and SQL queries.
 
 ## 🧠 Automated Business Logic
 
