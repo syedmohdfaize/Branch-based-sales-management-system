@@ -70,7 +70,8 @@ Super Admins can access all branches, while Admins are restricted to their assig
    pip install streamlit mysql-connector-python pandas
   ```
 - #### Set up the database
-  - Run the schema/table creation statements from query.sql in MySQL Workbench
+  - CREATE DATABASE ```Branch_Based_Sales_Management_System.sql```;
+  - Import the provided SQL schema file.
   - Run the trigger creation statement from query.sql
   - Insert your sample data
 - Run the schema/table creation statements from query.sql in MySQL Workbench
