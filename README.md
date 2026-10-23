@@ -58,16 +58,16 @@ Super Admins can access all branches, while Admins are restricted to their assig
 
 ## ⚙️ How to Run This Project
 
-#### Clone the repository
+#### - Clone the repository
    git clone https://github.com/ThereseRansey/sales-management-system.git
    cd sales-management-system
-#### Install dependencies
+#### - Install dependencies
    pip install streamlit mysql-connector-python pandas
-#### Set up the database
+#### - Set up the database
 - Run the schema/table creation statements from query.sql in MySQL Workbench
 - Run the trigger creation statement from query.sql
 - Insert your sample data
-#### Configure your database credentials Create a .streamlit/secrets.toml file in the project folder (not included in this repo for security):
+#### - Configure your database credentials Create a .streamlit/secrets.toml file in the project folder (not included in this repo for security):
 
 '''text
    [mysql]
