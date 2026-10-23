@@ -19,35 +19,21 @@
 - Data handling: pandas
 -----------------------------------------------------------------------------------------------------------------------------
 
-🗄️ ### Database Schema
-## Branches
-branch_id
-branch_name
-branch_admin_name
+## Database Schema
+
+| Table Name | Columns |
+|------------|----------|
+| **Branch** | branch_id, branch_name, branch_admin_name |
+| **Customer_sales** | sale_id, branch_id, date, name, mobile_number, product_name, gross_sales, recieved_amount, pending_amount, status |
+| **Users** | user_id, username, password, branch_id, role, email |
+| **Payment_Splits** | payment_id, sale_id, payment_date, amount_paid, payment_method |
+
+
 ## Customer Sales
-sale_id
-branch_id
-date
-name
-mobile_number
-product_name
-gross_sales
-recieved_amount
-pending_amount
-status
+
 ## Users
-user_id
-username
-password
-branch_id
-role
-email
-## Payment Splits
-payment_id
-sale_id
-payment_date
-amount_paid
-payment_method
+l
+
 -----------------------------------------------------------------------------------------------------------------------------
 
 ### Key Design Decisions
