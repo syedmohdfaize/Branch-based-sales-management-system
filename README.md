@@ -77,7 +77,7 @@ Super Admins can access all branches, while Admins are restricted to their assig
    database = "branch_based_sales_management_system"
 
 #### Run the app
-   streamlit run app.py
+   ''streamlit run app.py''
 
 ## Author
 [Syed Mohamed Faize]
